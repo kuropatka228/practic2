@@ -1,0 +1,172 @@
+.header_top{
+  display: flex;
+}
+
+.logo_right{
+  margin-left: 10%;
+  display: flex;
+  align-items: center;
+  gap: 220px;
+}
+
+.logo_left{
+  margin-left: 10%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
+    margin-bottom: 5px;
+  }
+
+.p_logo {
+    font-family: "Itim", cursive;
+    font-size: 25px;
+    font-weight: 400;
+    font-style: normal;
+    rotate: -10deg;
+}
+
+.p_bar {
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 25px;
+  font-weight: 400;
+}
+
+.p_baritim {
+  font-family: "Itim", cursive;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 25px;
+  font-weight: 400;
+}
+
+.main_screen {
+  display: flex;
+  align-items: center; /*  Выравнивание по вертикали */
+}
+
+.main_screen_left{
+  display: flex;
+  align-items: center; /*  Выравнивание по вертикали */
+}
+
+
+.text_container {
+  flex: 1;
+  z-index: 1;
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-size: 50px;
+  position: relative; /* Добавлено */
+  margin-left: 190px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.text_container p_name {
+  flex: 1;
+  z-index: 1;
+  font-family: "Itim", cursive;
+  font-optical-sizing: auto;
+  font-size: 50px;
+  position: relative; /* Добавлено */
+}
+
+.text_container p_free {
+  width: 300px;
+  height: 52px;
+  display: flex;
+  border-radius: 20px;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(187, 253, 113, 1);
+  flex: 1;
+  z-index: 2;
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-size: 21px;
+  position: relative; /* Добавлено */
+  transform: rotate(-10deg);
+}
+
+
+.line_background {
+  position: fixed; /* или absolute, fixed */
+  z-index: -1;
+}
+
+
+@media (max-width: 768px) {
+  .logo {
+      margin-left: 5%; /* Уменьшаем отступ слева */
+      gap: 7px;
+  }
+  
+  .p_logo {
+    font-size: 12px; /* Уменьшаем размер шрифта */
+    rotate: -10deg; /* Убираем поворот */
+  }
+  .logo_left img {
+      max-width: 25px; /* Уменьшаем максимальную ширину логотипа */
+      height: auto;   /* Автоматически подстраиваем высоту */
+      margin-bottom: 10px;
+  }
+  .logo_right{
+    margin-left: 20px;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+  }
+      
+  .logo_left{
+    margin-left: 2%;
+    display: flex;
+    align-items: center;
+  }
+  .p_bar {
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 12px;
+    font-weight: 400;
+  }
+      
+  .p_baritim {
+    font-family: "Itim", cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 12px;
+    font-weight: 400;
+  }
+
+  .line_background {
+    margin: 0 0px 0 -8px;
+    position: fixed; /* или absolute, fixed */
+    z-index: -1;
+  }
+
+  .text_container {
+    flex: 1;
+    z-index: 1;
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+    font-size: 18px;
+    position: relative; /* Добавлено */
+    margin-left: 20px;
+  }
+  
+  .text_container p_name {
+    flex: 1;
+    z-index: 1;
+    font-family: "Itim", cursive;
+    font-optical-sizing: auto;
+    font-size: 18px;
+    position: relative; /* Добавлено */
+  }
+  
+}
+
