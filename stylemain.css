@@ -46,12 +46,14 @@
 
 .main_screen {
   display: flex;
-  align-items: center; /*  Выравнивание по вертикали */
+  align-items: flex-start; /*  Выравнивание по вертикали */
+  justify-content: space-between;
 }
 
 .main_screen_left{
   display: flex;
   align-items: center; /*  Выравнивание по вертикали */
+  flex-direction: column;
 }
 
 
@@ -81,15 +83,14 @@
   height: 52px;
   display: flex;
   border-radius: 20px;
+  margin-top: 20px;
+  margin-left: 40px;
   align-items: center;
   justify-content: center;
   background-color: rgba(187, 253, 113, 1);
   flex: 1;
   z-index: 2;
-  font-family: "Roboto Slab", serif;
-  font-optical-sizing: auto;
   font-size: 21px;
-  position: relative; /* Добавлено */
   transform: rotate(-10deg);
 }
 
@@ -100,19 +101,112 @@
 }
 
 
+
+/* доверять */
+
+.button_main{
+  display: flex;
+  flex-direction: row ;
+  gap: 50px;
+  margin-left: 100px;
+}
+
+.black-dash {
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-style: solid;
+  border-width: 2px;
+  border-color: black;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  width: 200px;
+  height: 50px;
+
+}
+
+.black-dash:hover {
+  background-color: transparent;
+  border-style: dashed;
+  border-color: black;
+  color: rgb(0, 0, 0);
+}
+
+.dash-white {
+  width: 200px;
+  height: 50px;
+  background-color: transparent;
+  border: 2px dashed black;
+  border-radius: 8px;
+  color: black;
+  padding: 10px 20px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.dash-white:hover {
+  background-color: black;
+  color: white;
+  border-style: solid;
+  border-width: 2px;
+  border-color: black;
+  border-radius: 8px;
+}
+
+/* .people img{
+  width: 100px;
+  height: auto;
+} */
+
+
+
 @media (max-width: 768px) {
   .logo {
-      margin-left: 5%; /* Уменьшаем отступ слева */
+      margin-left: 5%; 
       gap: 7px;
   }
+
+  .main_screen_left{
+    display: flex;
+    align-items: baseline;
+    flex-direction: column;
+  }
   
+  .black-dash, .dash-white {
+    font-size: 11px;
+    padding: 8px 16px;
+    height: 25px;
+    width: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .button_main{
+    display: flex;
+    flex-direction: row ;
+    gap: 0px;
+    margin-left: 20px;
+    width: 200px;
+  }
+
   .p_logo {
-    font-size: 12px; /* Уменьшаем размер шрифта */
-    rotate: -10deg; /* Убираем поворот */
+    font-size: 12px; 
+    rotate: -10deg; 
   }
   .logo_left img {
-      max-width: 25px; /* Уменьшаем максимальную ширину логотипа */
-      height: auto;   /* Автоматически подстраиваем высоту */
+      max-width: 25px; 
+      height: auto;  
       margin-bottom: 10px;
   }
   .logo_right{
@@ -154,9 +248,9 @@
     z-index: 1;
     font-family: "Roboto Slab", serif;
     font-optical-sizing: auto;
-    font-size: 18px;
+    font-size: 15px;
     position: relative; /* Добавлено */
-    margin-left: 20px;
+    margin-left: 0px;
   }
   
   .text_container p_name {
@@ -166,6 +260,25 @@
     font-optical-sizing: auto;
     font-size: 18px;
     position: relative; /* Добавлено */
+  }
+
+  .text_container p_free {
+    width: 170px;
+    height: 25px;
+    display: flex;
+    border-radius: 10px;
+    margin-top: 3px;
+    margin-left: 0px;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(187, 253, 113, 1);
+    font-size: 11px;
+    transform: rotate(-10deg);
+  }
+
+  .people img{
+    max-width: 190px;
+    height: auto;
   }
   
 }
