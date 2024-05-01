@@ -1,6 +1,8 @@
 
+
 .header_top{
   display: flex;
+  justify-content: center;
 }
 
 .logo_right{
@@ -11,7 +13,6 @@
 }
 
 .logo_left{
-  margin-left: 10%;
   display: flex;
   align-items: center;
   gap: 10px;
@@ -95,8 +96,12 @@
 }
 
 .line_background {
-  position: fixed; 
+  position: fixed;
   z-index: -1;
+  background-image: url("img/Line.png");
+  background-size: cover; /*  Масштабируем изображение, чтобы заполнить всю область  */
+  width: 100%;
+  height: 100%; 
 }
 
 .button_main{
@@ -124,6 +129,40 @@
   width: 200px;
   height: 50px;
 
+}
+
+
+.p_bar {
+  text-decoration: none;
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 25px;
+  font-weight: 400;
+  position: relative;
+  transition: text-decoration 0.2s ease-in-out;
+}
+
+.p_bar:hover::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: currentColor;
+  transform: scaleX(0);
+  transition: transform 0.2s ease-in-out;
+}
+
+.logo_right a {
+  text-decoration: none; /* Убираем подчеркивание */
+  color: inherit; /* Наследуем цвет текста от родительского элемента */
+}
+
+.p_bar:hover::after {
+  transform: scaleX(1);
+  
 }
 
 .black-dash:hover {
@@ -219,7 +258,7 @@
   flex-direction: column;
   gap: 10px;
   margin-top: 100px;
-  margin-right: 350px;
+  margin-right: 600px;
 }
 
 .row_right{
@@ -339,11 +378,15 @@ li::before {
   margin-right: 20px;
 }
 
-
+h_list{
+  font-weight: 500;
+  margin-left: 200px;
+  font-size: 30px;
+}
 
 h3{
   font-weight: 500;
-  margin-left: 60px;
+  margin-left: 200px;
 }
 
 .image-container {
@@ -366,7 +409,7 @@ h3{
   font-family: "Roboto Slab", serif;
   font-size: 35px;
   position: absolute;
-  left: 30%;
+  left: 33%;
   transform: translate(-50%, 0);
 }
 
@@ -428,7 +471,7 @@ h4 {
   font-size: 35px;
   position: absolute;
   top: 20%;
-  left: 35%;
+  left: 38%;
   transform: translate(-50%, 0);
 }
 
@@ -552,6 +595,7 @@ h5{
   font-weight: 300;
   margin-left: -8px;
   margin-right: -8px;
+  margin-bottom: -8px;
 }
 
 .footer-column {
@@ -574,8 +618,17 @@ h5{
 
 @media (max-width: 768px) {
 
+  .main{
+    overflow-x: hidden;
+  }
+
+  h3{
+    font-weight: 500;
+    margin-left: 50px;
+  }
+
   html{
-    max-width: 430px;
+    width: 430px;
   }
 
   .footer {
@@ -719,9 +772,13 @@ h5{
   }
 
 
-  h3{
+  h_list{
     display: flex;
     flex-direction: column;
+    margin-right: 0px;
+    margin-left: 70px;
+    font-size: 22px;
+    margin-top: 20px;
   }
 
   h4 {
@@ -797,7 +854,6 @@ h5{
 
   .list_name2{
     padding-left: 0px;
-    padding-top: 10px;
     font-family: "Roboto Slab", serif;
     font-size: 18px;
   }
@@ -951,9 +1007,15 @@ h5{
   }
 
   .line_background {
-    margin: 0 0px 0 -8px;
-    position: fixed; /* или absolute, fixed */
+    position: fixed;
     z-index: -1;
+    background-image: url("img/Line_mini.png");
+    background-size: 100% ;
+    margin-left: -10px;
+    background-repeat: no-repeat;
+    max-width: 100%;
+    width: 435px;
+    overflow-x: hidden;
   }
 
   .text_container {

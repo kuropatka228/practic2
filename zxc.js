@@ -9,3 +9,4 @@ function checkScreenSize() {
 }
 window.addEventListener("load", checkScreenSize);
 window.addEventListener("resize", checkScreenSize);
+
