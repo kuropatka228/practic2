@@ -27,7 +27,7 @@
       font-style: normal;
       rotate: -10deg;
 }
-  
+
 .p_bar {
     text-decoration: none;
     font-family: "Roboto Slab", serif;
@@ -52,8 +52,8 @@
   }
 
   .logo_right a {
-    text-decoration: none; /* Убираем подчеркивание */
-    color: inherit; /* Наследуем цвет текста от родительского элемента */
+    text-decoration: none;
+    color: inherit;
   }
   
   .p_bar:hover::after {
@@ -300,6 +300,14 @@ h1{
     margin-bottom: 5px; /*  Добавляем отступ под каждой ссылкой  */
   }
 
+  .market-towar img {
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .market-towar img:hover {
+    transform: scale(0.9);
+  }
+
   @media (max-width: 768px) {
 
     .footer {
@@ -412,7 +420,6 @@ h1{
         transform: rotate(360deg);
       }
     
-
 .search_bar input {
     flex-grow: 1;
     padding: 5px;
