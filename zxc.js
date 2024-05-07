@@ -1,10 +1,10 @@
-const image = document.getElementById("responsive-image");
+const image = document.getElementById("responsive_image");
 
 function checkScreenSize() {
   if (window.innerWidth <= 768) { 
-    image.src = "/img/people2_mini.png";
+    image.src = "img/people2-mini.png";
   } else {
-    image.src = "/img/people2.png";
+    image.src = "img/people2.png";
   }
 }
 window.addEventListener("load", checkScreenSize);

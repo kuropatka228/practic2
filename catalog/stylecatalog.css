@@ -225,7 +225,7 @@ h1{
   .arrow-left{
     width: 10px;
     height: 20px;
-    background-image: url('/img/Arrow2.png');
+    background-image: url('.././img/Arrow2.png');
     background-size: cover;
     cursor: pointer;
     transition: transform 0.3s ease;
@@ -234,7 +234,7 @@ h1{
   .arrow-right {
     width: 12px;
     height: 20px;
-    background-image: url('/img/Arrow3.png');
+    background-image: url('.././img/Arrow3.png');
     background-size: cover;
     cursor: pointer;
     transition: transform 0.3s ease;

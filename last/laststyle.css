@@ -1,0 +1,118 @@
+.logo_left{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+  }
+  
+  
+  .logo img {
+      margin-bottom: 5px;
+    }
+  
+  .p_logo {
+      font-family: "Itim", cursive;
+      font-size: 25px;
+      font-weight: 400;
+      font-style: normal;
+      rotate: -10deg;
+      justify-content: center;
+  }
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    font-family: "Roboto Slab", serif;
+}
+
+.container {
+    max-width: 400px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-family: "Roboto Slab", serif;
+    border-radius: 30px;
+}
+
+.title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-family: "Roboto Slab", serif;
+}
+
+.input-field {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    font-family: "Roboto Slab", serif;
+}
+
+input[type="email"], input[type="password"] {
+    width: 80%;
+    height: 40px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: "Roboto Slab", serif;
+}
+
+.button-group {
+    text-align: center;
+    font-family: "Roboto Slab", serif;
+    margin-top: 50px;
+}
+
+.btn {
+    width: 45%;
+    height: 40px;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #484FF4;
+    color: #fff;
+    cursor: pointer;
+    font-family: "Roboto Slab", serif;
+    transition: transform 0.2s ease;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+}
+
+#login-btn {
+    margin-right: 10px;
+    font-family: "Roboto Slab", serif;
+}
+
+.icon-group {
+    margin-top: 30px;
+    text-align: center;
+    font-family: "Roboto Slab", serif;
+}
+
+form{
+    margin-top: 40px;
+}
+
+.back-btn {
+    display: block;
+    width: 100px;
+    height: 30px;
+    color: #333333;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
